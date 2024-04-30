@@ -163,6 +163,7 @@ def user_stats(df, city):
     # display counts of user types
     user_types = df['User Type'].value_counts()
     print("The count of user types:")
+    # get each user type from dataframe
     for index, user_count in enumerate(user_types):
         print("  {}: {}".format(user_types.index[index], user_count))
 
@@ -170,6 +171,7 @@ def user_stats(df, city):
         # display counts of gender
         genders = df['Gender'].value_counts()
         print("The count of gender:")
+        # get each gender from dataframe
         for index, gender_count in enumerate(genders):
             print("  {}: {}".format(genders.index[index], gender_count))
 
